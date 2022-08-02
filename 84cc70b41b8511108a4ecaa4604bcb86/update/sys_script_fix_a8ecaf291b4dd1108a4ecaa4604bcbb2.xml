@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>test</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[var progress_id = sn_vcs.AppSourceControl.refreshRepository();
+
+gs.print("==========================> The progress_id is: "+ JSON.stringify(progress_id));]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-01 18:03:36</sys_created_on>
+        <sys_id>a8ecaf291b4dd1108a4ecaa4604bcbb2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="Git-sync" source="84cc70b41b8511108a4ecaa4604bcb86">84cc70b41b8511108a4ecaa4604bcb86</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Git-sync">84cc70b41b8511108a4ecaa4604bcb86</sys_scope>
+        <sys_update_name>sys_script_fix_a8ecaf291b4dd1108a4ecaa4604bcbb2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-01 18:05:19</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

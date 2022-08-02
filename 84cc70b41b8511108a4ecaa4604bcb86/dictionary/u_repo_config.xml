@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Repo Config" max_length="40" name="u_repo_config" type="collection">
+        <element label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element label="Repo" max_length="32" name="u_repo" reference="sys_repo_config" type="reference"/>
+        <element label="User" max_length="32" name="u_user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="u_repo"/>
+        </index>
+        <index name="index2">
+            <element name="u_user"/>
+        </index>
+    </element>
+</database>
